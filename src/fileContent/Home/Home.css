@@ -1,0 +1,93 @@
+.container {
+  height: 130vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-inline: hidden;
+}
+
+.homeImage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./sporty.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homeColor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(45, 47, 59, 0.8);
+}
+
+.homeColor > svg {
+  margin-top: 10%;
+}
+
+.rool {
+  animation: rool infinite 10s linear;
+}
+
+@keyframes rool {
+  from {
+    transform: rotate(0deg);
+    transform-style: preserve-3d;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .rool {
+    height: 25%;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .rool {
+    height: 25%;
+    width: 25%;
+  }
+}
+
+.homeColor > Button {
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: large;
+  font-family: cursive;
+  border: 3px solid rgb(45, 47, 59);
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  margin: 50px;
+  color: goldenrod;
+}
+
+.homeColor > Button:hover {
+  background-color: goldenrod;
+  color: rgb(45, 47, 59);
+  border: 5px solid goldenrod;
+  outline: none;
+}
+
+.homeColor > Button:focus {
+  background-color: transparent;
+  color: rgb(45, 47, 59);
+  border: 3px solid rgb(45, 47, 59);
+  outline: none;
+}

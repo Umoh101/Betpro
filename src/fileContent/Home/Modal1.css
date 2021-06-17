@@ -1,0 +1,29 @@
+.modal_box{
+  height: 100vh;
+  width : 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.modal_content{
+  height: 100%;
+  width: 100%;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+
+
+@media screen and (max-width : 360px){
+ .modal{
+   height: 50px;
+   width: 60px;
+ }
+
+ .modal_box{
+  height: 100px;
+  width : 20%;
+ }
+}

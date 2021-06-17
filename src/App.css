@@ -1,0 +1,24 @@
+@import "~antd/dist/antd.css";
+
+.image1_content{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("./fileContent/Footer/42.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color_background{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items : center;
+  font-size : 80px;
+  color : goldenrod;
+  background-color : rgb(62, 61, 61, 0.7);
+}
